@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.van.piggybank.Expenses">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/income"
+                android:text="@string/income"
+                android:onClick="onClick"/>
+
+            <Button android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/budget"
+                android:text="@string/budget"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/expenses"
+                android:text="@string/expenses"
+                android:onClick="onClick"/>
+
+            <Button android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/social"
+                android:text="@string/social"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:paddingTop="30sp">
+
+        <Button
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/addIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Expenses"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current month"
+            android:layout_marginLeft="10sp"
+            android:textColor="#F00"/>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:background="#8080FF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
